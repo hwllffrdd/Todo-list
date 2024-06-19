@@ -32,7 +32,7 @@ class AddTodo(FlaskForm):
                             ("pkgs", "pkgs")
                         ])
     until = DateTimeField('Until', format='%Y-%m-%dT%H:%M', validators=[Optional()], widget=DateTimeLocalInput())
-    submit = SubmitField("Submit Cafe")
+    submit = SubmitField("Submit")
 
 
 app = Flask(__name__)
